@@ -1,0 +1,48 @@
+.MainContainer {
+  margin: auto;
+}
+.innerdive {
+  border: 1px solid black;
+  margin: 100px;
+}
+.col1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
+.con-item {
+  max-width: 100px;
+}
+.con {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+.con:nth-child(even) {
+  background-color: rgb(177, 171, 171);
+}
+.con:nth-child(odd) {
+  background-color: white;
+}
+.button1 {
+  max-width: 500px;
+  cursor: pointer;
+  padding: 4px 20px;
+  background-color: rgb(220, 108, 108);
+  border: none;
+}
+.button2 {
+  max-width: 500px;
+  cursor: pointer;
+  padding: 4px 27px;
+  background-color: rgb(139, 186, 139);
+  border: none;
+}
+.button0 {
+  cursor: pointer;
+  padding: 3px 30px;
+  background-color: rgb(177, 171, 171);
+  border: 1px solid grey;
+}

@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-
+import Make from './Components/Make';
+import ListView from './Components/ListView/ListView';
+import Code from './Components/Code/Code';
+import Color from './Components/Color/Color';
+import GeneratedText from './Components/GeneratedText';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path='/' element={<ListView />} />
+        <Route path='/code' element={<Code />} />
+        <Route path='/color' element={<Color />} />
+        <Route path='/make' element={<Make />} />
+        <Route path='/text' element={<GeneratedText />} />
+      </Routes>
+    </>
   );
 }
 

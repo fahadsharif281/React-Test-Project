@@ -1,0 +1,65 @@
+.Container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.innerdive {
+  border: 1px solid black;
+}
+.col2 {
+  margin-top: 20px;
+}
+.colum1 {
+  margin-bottom: 20px;
+  /* margin: 20px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputStyles {
+  width: 200px;
+  height: 30px;
+  border-color: black;
+}
+
+.inputs_div {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.width_div {
+  justify-content: space-between;
+  display: flex;
+  max-width: 900px;
+  margin: 100px;
+  flex-direction: "row";
+  /* background-color: aqua; */
+  border: 1px solid black;
+}
+.columDiv {
+  /* flex-direction: column; */
+  /* flex-direction: column; */
+  /* display: flex; */
+}
+.Right_items {
+  align-items: center;
+  margin-right: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: bisque; */
+}
+
+.nextBtn {
+  margin: 40px;
+}
+.btnstyles {
+  height: 25px;
+  width: 100px;
+}
+.columDiv {
+  margin-top: 20px;
+}
+
+.itemTxt {
+  font-size: 17px;
+}
