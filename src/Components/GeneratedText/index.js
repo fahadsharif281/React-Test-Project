@@ -12,7 +12,8 @@ const GeneratedText = () => {
     const listView = JSON.parse(localStorage.getItem('listview'));
     if (editID) {
       for (const item of listView) {
-        if (item.id == editID) {
+        if (Number(item.id) === Number(editID)) {
+          console.log('added')
           item.id = editID;
           item.name = localStorage.getItem('name');
           item.color = localStorage.getItem('color');
