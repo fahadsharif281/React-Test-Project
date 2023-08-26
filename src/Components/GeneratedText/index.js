@@ -13,7 +13,6 @@ const GeneratedText = () => {
     if (editID) {
       for (const item of listView) {
         if (Number(item.id) === Number(editID)) {
-          console.log('added')
           item.id = editID;
           item.name = localStorage.getItem('name');
           item.color = localStorage.getItem('color');
@@ -30,7 +29,12 @@ const GeneratedText = () => {
         make: localStorage.getItem('make'),
         code: localStorage.getItem('code'),
       };
-      const updatedListView = [...listView, newItem];
+      let updatedListView = [];
+      if (listView) {
+        updatedListView = [...listView, newItem];
+      } else {
+        updatedListView = [newItem];
+      }
       localStorage.setItem('listview', JSON.stringify(updatedListView));
       navigate('/');
     }
