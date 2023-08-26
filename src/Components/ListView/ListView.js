@@ -1,23 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./ListView.css";
 import { useNavigate } from "react-router-dom";
-const arr = [
-  {
-    name: "John",
-    carName: "Audi",
-    color: "Red",
-  },
-  {
-    name: "Harry",
-    carName: "BMW",
-    color: "Orange",
-  },
-  {
-    name: "Harry",
-    carName: "BMW",
-    color: "Black",
-  },
-];
+
 const ListView = () => {
   const navigate = useNavigate();
   const [data, setData] = useState([]);
